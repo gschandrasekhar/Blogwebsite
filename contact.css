@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-color: #efefef;
+    font-family: sans-serif;
+    background: url('cse1000.jpg');
+
+}
+  
+ 
+.contactbox{
+    width: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    
+}
+ 
+  .contactbox input{
+        font-size:16px;
+        width: 100%;
+        padding: 15px 10px;
+        border: 0;
+        outline:none;
+        border-radius: 5px;
+    }
+
+    .contactbox button{
+        font-size: 18px;
+        font-weight: bold;
+        margin: 20px 0;
+        padding: 10px 15px;
+        width: 50%;
+        color: rgb(30, 30, 236);
+      border-radius: 5px ;
+   
+      border: 0;
+
+    }
+ 
