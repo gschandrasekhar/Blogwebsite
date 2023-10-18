@@ -78,4 +78,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 Happy coding! We look forward to your contributions to make our blog website project even better.
 ```
 
-Customize this README to include your project's specific details, and replace placeholders such as `yourusername` with the appropriate information. This README will provide users and contributors with an overview of the project, how to get started, how to contribute, and other important information.
+
