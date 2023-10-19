@@ -27,19 +27,22 @@ body{
         padding: 15px 10px;
         border: 0;
         outline:none;
-        border-radius: 5px;
+        border-radius: 40px;
     }
 
-    .contactbox button{
-        font-size: 18px;
-        font-weight: bold;
-        margin: 20px 0;
-        padding: 10px 15px;
-        width: 50%;
-        color: rgb(30, 30, 236);
-      border-radius: 5px ;
-   
-      border: 0;
-
+    .btn {
+        cursor: pointer;
+        background-color: #ffeb99;
+        border-width: 5px;
+        border-color: #ffcc00;
+        padding: 5rem;
+        font-weight: 700;
+        transition: all 0.5s;
     }
- 
+
+    .btn:hover {
+        background-color: #ffeb99;
+        border: 1px solid black;
+        border-width: 0 0 5px 1px;
+        border-color: #ffcc00;
+    }
