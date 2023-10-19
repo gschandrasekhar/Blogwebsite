@@ -5,7 +5,7 @@
 }
 body{
     background: url('cse4001.jpg');
-   
+    background-position: center 40%;
     background-size:cover;
   }
   
@@ -49,6 +49,10 @@ body{
 
 
    
-   
+@media (max-width: 850px){
+   body{
+        background-position: center 25%;
+   } 
+}
      
      
