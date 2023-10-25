@@ -20,10 +20,11 @@
     position: relative;
     width: 400px;
     height: 440px;
-    background-color: transparent;
+    background-color: #02264f;
     border: 1px solid whitesmoke;
     border-radius: 20px;
     display: flex;
+
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(15px);
@@ -43,11 +44,11 @@
   }
  
   .input-box input {
-    width: 70%;
+    width: 20vh;
     height: 50px;
     background: transparent;
     border: none;
-    border-bottom: 1px solid white;
+    border: 1px solid white;
     border-radius: 20px;
     margin: 20px;
     outline: none;
