@@ -1,46 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign up</title> 
-    <link rel="stylesheet" href="style3.css">     
+    <style>
+        /* Container for centering the form */
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* background-color: #323232; */
+            background-color: beige;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+        }
 
+        .form {
+            --input-focus: #2d8cf0;
+            --font-color: #323232;
+            --font-color-sub: #666;
+            --bg-color: beige;
+            --main-color: #323232;
+            padding: 30px; /* Increase the padding for a 30px gap */
+            background: #a1c3ff;
+            /* background: rgb(169, 216, 245); */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px; /* Maintain the 30px gap between elements */
+            border-radius: 5px;
+            border: 2px solid var(--main-color);
+            border-top: 2px solid var(--main-color);;
+            box-shadow: 4px 4px var(--main-color);
+            width: 400px; /* Increase the width of the card */
+            margin: 10px auto; /* Add margin to create space at the top */
+        }
+
+        .title {
+            color: var(--font-color);
+            font-weight: 900;
+            font-size: 28px; /* Increase the font size */
+            margin-top: 50px; /* Reduce the margin to create space at the top */
+            margin-bottom: 5px; /* Reduce the margin to create space at the top */
+            padding-top: 60px;
+            font-family: poppins,sans-serif;
+        }
+
+        .title span {
+            color: var(--font-color-sub);
+            font-weight: 600;
+            font-size: 17px;
+        }
+
+        .input {
+            width: 100%;
+            height: 40px;
+            border-radius: 5px;
+            border: 2px solid var(--main-color);
+            background-color: var(--bg-color);
+            box-shadow: 4px 4px var(--main-color);
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--font-color);
+            padding: 5px 10px;
+            outline: none;
+        }
+
+        .input::placeholder {
+            color: var(--font-color-sub);
+            opacity: 0.8;
+        }
+
+        .input:focus {
+            border: 2px solid var(--input-focus);
+        }
+
+        .login-with {
+            display: flex;
+            gap: 20px;
+        }
+
+        .button-log {
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            border: 2px solid var(--main-color);
+            background-color: var(--bg-color);
+            box-shadow: 4px 4px var(--main-color);
+            color: var(--font-color);
+            font-size: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .icon {
+            width: 24px;
+            height: 24px;
+            fill: var(--main-color);
+        }
+
+        .button-log:active, .button-confirm:active {
+            box-shadow: 0px 0px var(--main-color);
+            transform: translate(3px, 3px);
+        }
+
+        .button-confirm {
+            margin-top: 15px; /* Increase the top margin */
+            width: 100px; /* Make the button full width */
+            height: 40px;
+            border-radius: 5px;
+            border: 2px solid var(--main-color);
+            background-color: var(--bg-color);
+            box-shadow: 4px 4px var(--main-color);
+            font-size: 17px;
+            font-weight: 600;
+            color: var(--font-color);
+            cursor: pointer;
+        }
+    </style>
 </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
 <body>
-    <div class="registartion-form">
-        <h1>Sign up </h1>
-        <form accept="form.php">
-         <p>FULL NAME:</p>
-         <input type="text"Placeholder="Enter Full Name">
-        <p>User Name</p>
-        <input type="text" placeholder="Enter User Name">
-        <p>Email:</p>
-        <input type="email" placeholder="Enter Email ID">
-        <P>Mobile Number</P>
-        <input type="number" placeholder="Enter Mobile Number">
-        <p>Date of Birth</p>
-        <input type="date" placeholder="DOB">
-        <P>GENDER</P>
-        <select name="gender" id="gender">
-            <option value="MALE">MALE</option>
-            <option value="FEMALE">FEMALE</option>
-            <option value="Prefer not to say">Prefer not to say</option>
-        </select>
-        <p>Create password</p>
-        <input type="password" placeholder="Create Password">
-        <P>Confirm Password</P>
-        <input type="password" placeholder="Confirm Password">
-        <br>
-        <br>
-        
-         
-        <a href="index.html">
-            <input class="btn" type="button"
-           name value= "Sign Up"></a> 
-        </form>
-    </divP
-    
+    <div class="container">
+        <div class="form">
+            <div class="title"><h1>Sign Up</h1></div>
+            <input type="text" placeholder="Full Name" class="input">
+            <input type="text" placeholder="Username" class="input">
+            <input type="email" placeholder="Email" name="email" class="input">
+            <input type="tel" placeholder="Phone" class="input">
+            <input type="date" placeholder="DOB" class="input">
+            <select name="gender" class="input">
+                <option value="MALE">Male</option>
+                <option value="FEMALE">Female</option>
+                <option value="Prefer not to say">Prefer not to say</option>
+            </select>
+            <input type="password" placeholder="Create Password" name="password" class="input">
+            <input type="password" placeholder="Confirm Password" name="password" class="input">
+            
+            <button class="button-confirm">Submit</button>
+        </div>
+    </div>
 </body>
 </html>
