@@ -11,10 +11,11 @@
 header{
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(background1.jpg);
+  background-image: linear-gradient(rgba(102, 115, 167, 0.7),rgba(16, 35, 114, 0.7)),url(background1.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
+  border-radius: 30px;
 }
 .red{
   justify-content: center;
@@ -24,6 +25,9 @@ header{
 .navbar{
     background-color: black;
     border-radius: 30px;
+    width: 100%;
+    overflow: hidden;
+    position:fixed;
     
 }
 .navbar ul{
