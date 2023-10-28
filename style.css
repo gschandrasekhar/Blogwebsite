@@ -30,6 +30,14 @@ header{
     position:fixed;
     
 }
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black; /* add your desired background color */
+  z-index: 1000; /* make sure the navbar is above other elements */
+}
+
 .navbar ul{
     overflow: auto;
 }
