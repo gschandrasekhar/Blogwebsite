@@ -7,6 +7,7 @@
     <title>WEB DEVELOPMENT BLOG</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="videogames.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   </head>
   <style>
     .footer{
@@ -36,6 +37,17 @@
       display: inline-block;
       padding: 10px 20px;
       background-color: #777;
+    }
+    #scrollToTopBtn {
+      padding: 15px 20px 15px 20px;
+    border-radius: 8px;
+    background-color: #222;
+    color: rgb(231, 234, 238);
+    border: #444;
+    position: fixed;
+    cursor: pointer;
+    bottom: 1.5%;
+    right: 0.8%;
     }
   </style>
   <body>
@@ -657,6 +669,8 @@ Once production is complete and the game has shipped, the game development
       
       
     </div>
+    <button id="scrollToTopBtn" onclick="scrollToTop()"><i
+      class="fa-solid fa-arrow-up"></i></button></div>
   </footer class="footer">
  
 
@@ -664,4 +678,24 @@ Once production is complete and the game has shipped, the game development
 
   
   </body>
+  <script>
+    function scrollToTop() {
+      // Smooth scroll behavior
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  
+    window.onscroll = function () {
+      const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+      const halfPage = window.innerHeight / 2;
+  
+      if (window.scrollY > halfPage) {
+        scrollToTopBtn.style.display = "block";
+      } else {
+        scrollToTopBtn.style.display = "none";
+      }
+    }
+  </script>
 </html>
