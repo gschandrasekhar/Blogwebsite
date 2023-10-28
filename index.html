@@ -26,6 +26,15 @@
       list-style: none;
       padding: 0;
     }
+    .sticky {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        color: transparent;
+        background-color: transparent; /* add your desired background color */
+        z-index: 1000; /* make sure the navbar is above other elements */
+      }
+
     .nav__item{
       margin: 0 20px;
 
@@ -52,7 +61,7 @@
   </style>
   <body>
     <header>
-      <nav class="navbar">
+      <nav class="navbar" id="navbar">
           <ul>
               <li><a href="index.html">Home</a></li>
               <li><a href="about.html">About</a></li>
@@ -697,5 +706,14 @@ Once production is complete and the game has shipped, the game development
         scrollToTopBtn.style.display = "none";
       }
     }
+      window.onscroll = function () {
+        var navbar = document.getElementById("navbar");
+        if (window.pageYOffset >= 40) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      };
+  
   </script>
 </html>
