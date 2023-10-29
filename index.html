@@ -1,54 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WEB DEVELOPMENT BLOG</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="videogames.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  </head>
-  <style>
-    .footer{
-      background-color: #333;
-      color: white;
-      text-align: center;
-    }
-    .footer__addr{
-      max-width: 300px;
-      margin: 0 auto;
-    }
-    .footer__nav{
-      display: flex;
-      justify-content: center;
-      margin-top: 20px;
-      list-style: none;
-      padding: 0;
-    }
-    .sticky {
-        position: absolute;
-        top: 0;
-        width: 100%;
-        color: transparent;
-        background-color: transparent; /* add your desired background color */
-        z-index: 1000; /* make sure the navbar is above other elements */
-      }
 
-    .nav__item{
-      margin: 0 20px;
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WEB DEVELOPMENT BLOG</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="videogames.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+</head>
+<style>
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+  }
 
-    }
-    .nav__title{
-      font-weight: bold;
-    }
-    .footer__btn{
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #777;
-    }
-    #scrollToTopBtn {
-      padding: 15px 20px 15px 20px;
+  .footer__addr {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .footer__nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+  }
+
+  .sticky {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: transparent;
+    background-color: transparent;
+    /* add your desired background color */
+    z-index: 1000;
+    /* make sure the navbar is above other elements */
+  }
+
+  .nav__item {
+    margin: 0 20px;
+
+  }
+
+  .nav__title {
+    font-weight: bold;
+  }
+
+  .footer__btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #777;
+  }
+
+  #scrollToTopBtn {
+    padding: 15px 20px 15px 20px;
     border-radius: 8px;
     background-color: #222;
     color: rgb(231, 234, 238);
@@ -57,81 +67,99 @@
     cursor: pointer;
     bottom: 1.5%;
     right: 0.8%;
-    }
-  </style>
-  <body>
-    <header>
-      <nav class="navbar" id="navbar">
-          <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-           
-              <li><a href="contact.html">Contact us</a></li>
-              <div class="search">
-                  <input type="text" name="search" id="search" placeholder="Search this website">
-              </div>
-          </ul>
-      </nav>
+  }
+
+  /* Toggle Dark Theme */
+  #theme-btn {
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #596AFF;
+  }
+
+  #theme-btn:hover {
+    color: #BB86FC;
+  }
+
+  .changeTheme {
+    background: #1D1E22;
+    color: #eee;
+  }
+</style>
+
+<body>
+  <header>
+    <nav class="navbar" id="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        <li>
+          <div id="theme-btn" class="far fa-moon"></div>
+        </li>
+        <div class="search">
+          <input type="text" name="search" id="search" placeholder="Search this website">
+        </div>
+      </ul>
+    </nav>
   </header>
-    <div class="red">
-       
+  <div class="red">
+
     <b>
-        <h1> How video games are made: the game development process</h1>
-      </b>
-    </div>
-    
-    <b>
-      Want to know how video games are made? This article walks through the
-      video game development process, and in particular, the 'pipeline' – an
-      industry term that refers to the process of making a video game from
-      scratch</b>
-      <br>
-      
-      <img src="/cse1002.jpg " alt="car Image" class="center">
-      <hr>
-    
-    <h2>what is the game development pipeline?</h2>
+      <h1> How video games are made: the game development process</h1>
+    </b>
+  </div>
+
+  <b>
+    Want to know how video games are made? This article walks through the
+    video game development process, and in particular, the 'pipeline' – an
+    industry term that refers to the process of making a video game from
+    scratch</b>
+  <br>
+
+  <img src="/cse1002.jpg " alt="car Image" class="center">
+  <hr>
+
+  <h2>what is the game development pipeline?</h2>
+  <p>
+    The game development pipeline is the process of building a video game from
+    concept to completion
+  </p>
+  <h3>
+    Much like a production line, the game development pipeline helps organize
+    the flow of work so that everyone knows what they need to deliver and when
+  </h3>
+  <p>
+    The pipeline also helps manage the game development timeline and budget,
+    reducing inefficiencies and bottlenecks.
+  </p>
+
+  <p>
+    While pipelines vary between projects and studios, the process is fairly
+    similar whether you’re working on a AAA, indie or mobile game.
+  </p>
+  <p>
+    A game is continuously evolving, and things which sounded great in theory
+    may not work so well in reality. Therefore, the pipeline is not
+    necessarily a linear process. Work must be sent for creative approvals and
+    can often be sent back for revisions. Pipelines must be flexible enough to
+    factor in revisions and course changes.
+  </p>
+
+  <h1>The 3 stages of game development</h1>
+  <p>
+    Video game development is typically divided into 3 stages:<b>
+      pre-production, production, and post-production</b>
+  </p>
+  <ol>
+    <li>
+      <h2>pre production</h2>
+    </li>
     <p>
-      The game development pipeline is the process of building a video game from
-      concept to completion
+      This is where every project begins. Essentially, pre-production defines
+      what the game is about, why it should be made, and what it’s going to
+      take to make it.
     </p>
-    <h3>
-      Much like a production line, the game development pipeline helps organize
-      the flow of work so that everyone knows what they need to deliver and when
-    </h3>
-    <p>
-      The pipeline also helps manage the game development timeline and budget,
-      reducing inefficiencies and bottlenecks.
-    </p>
-     
-    <p>
-      While pipelines vary between projects and studios, the process is fairly
-      similar whether you’re working on a AAA, indie or mobile game.
-    </p>
-    <p>
-      A game is continuously evolving, and things which sounded great in theory
-      may not work so well in reality. Therefore, the pipeline is not
-      necessarily a linear process. Work must be sent for creative approvals and
-      can often be sent back for revisions. Pipelines must be flexible enough to
-      factor in revisions and course changes.
-    </p>
-  
-    <h1>The 3 stages of game development</h1>
-    <p>
-      Video game development is typically divided into 3 stages:<b>
-        pre-production, production, and post-production</b
-      >
-    </p>
-    <ol>
-      <li>
-        <h2>pre production</h2>
-      </li>
-      <p>
-        This is where every project begins. Essentially, pre-production defines
-        what the game is about, why it should be made, and what it’s going to
-        take to make it.
-      </p>
-      <b3>
+    <b3>
       <p>
         You might have a great idea for a type of game, a story you want to
         bring to life, or you may want to build one that leverages a certain
@@ -139,21 +167,21 @@
       </p>
       <b> In pre-production, you’ll find answers to questions like:</b>
       <br>
-<div class="box1">
-      <ul>
-        <li>What is the game about?</li>
-        <li>Who is the audience?</li>
-        <li>Is there a market for it? What’s the competition like?</li>
-        <li>Which platform will it be published on?</li>
-        <li>
-          How will it be monetized? Will it be sold on a platform, or free to
-          play with in-game purchases?
-        </li>
-        <li>How long will it take to develop?</li>
-        <li>What staff and resources will it require?</li>
-        <li>What is the estimated budget?</li>
-      </ul>
-    </div>
+      <div class="box1">
+        <ul>
+          <li>What is the game about?</li>
+          <li>Who is the audience?</li>
+          <li>Is there a market for it? What’s the competition like?</li>
+          <li>Which platform will it be published on?</li>
+          <li>
+            How will it be monetized? Will it be sold on a platform, or free to
+            play with in-game purchases?
+          </li>
+          <li>How long will it take to develop?</li>
+          <li>What staff and resources will it require?</li>
+          <li>What is the estimated budget?</li>
+        </ul>
+      </div>
       <br>
       <img src="/cse1013.jpg" alt="image in a game" class="center">
       <p>
@@ -189,17 +217,17 @@
       </p>
       <b>The GDD includes things like:</b>
       <div class="box1">
-      <ul>
-        <li>The idea or concept</li>
-        <li>Genre</li>
-        <li>Story and characters</li>
-        <li>Core game mechanics</li>
-        <li>Gameplay</li>
-        <li>Level and world design</li>
-        <li>rt and/or sketches</li>
-        <li>Monetization strategy</li>
-      </ul>
-    </div>
+        <ul>
+          <li>The idea or concept</li>
+          <li>Genre</li>
+          <li>Story and characters</li>
+          <li>Core game mechanics</li>
+          <li>Gameplay</li>
+          <li>Level and world design</li>
+          <li>rt and/or sketches</li>
+          <li>Monetization strategy</li>
+        </ul>
+      </div>
       <p>
         As a living document, the GDD is continuously updated and refined
         throughout production. This could be due to technical or financial
@@ -242,7 +270,7 @@
         experience, gameplay, mechanics, and art direction.
       </p>
       <br>
-      <img src="/cse1006.jpg" alt="game seigning"  class="center">
+      <img src="/cse1006.jpg" alt="game seigning" class="center">
       <p>
         Prototyping happens in pre-production to test whether or not the game
         idea will work, and if it is worthwhile to pursue. Many ideas do not
@@ -260,7 +288,7 @@
         than later.
       </h3>
       <br>
-      <img src="/cse1005.jpg" alt="image from a game "  class="center">
+      <img src="/cse1005.jpg" alt="image from a game " class="center">
       <p>
         The aim is to get a prototype up and running ASAP to test if your ideas
         actually work and if the game is as fun as you had hoped. Prototyping
@@ -270,12 +298,12 @@
         to others.
       </p>
       <br>
-      <img src="/cse1007.jpg" alt="game development "  class="center">
+      <img src="/cse1007.jpg" alt="game development " class="center">
       <br>
-        Placeholder assets are used to save time and money. These low-quality
-        assets stand in for things like weapons and props during the early
-        testing phase, and if approved, they’re replaced with final,
-        high-quality versions later on.
+      Placeholder assets are used to save time and money. These low-quality
+      assets stand in for things like weapons and props during the early
+      testing phase, and if approved, they’re replaced with final,
+      high-quality versions later on.
       </p>
       <p>
         Placeholder assets can be purchased or found for free online within game
@@ -314,7 +342,7 @@
         production.
       </p>
       <br>
-      <img src="/cse1003.jpg" alt=": iamage of Assassin's Creed Odyssey, "  class="center">
+      <img src="/cse1003.jpg" alt=": iamage of Assassin's Creed Odyssey, " class="center">
       <h3>Production milestones</h3>
       <p>
         There are a number of milestones to hit throughout the game development
@@ -367,7 +395,7 @@
       </p>
       <h3>Key game development roles</h3>
       <br>
-      <img src="/cse1001.jpg" alt="image from minecraft "  class="center">
+      <img src="/cse1001.jpg" alt="image from minecraft " class="center">
       <p>
         Game dev roles will vary depending on the size and type of studio. These
         are some of the common positions you'll find.
@@ -395,31 +423,31 @@
       </p>
       <b>There are many different aspects of programming, including:</b>
       <div class="box1">
-      <ul>
-        <li>Building a customized base engine for the game</li>
-        <li>Scripting functions, events, interactions</li>
-        <li>
-          Creating physics (e.g. gravity differences in a game set in space)
-        </li>
-        <li>Developing and modifying 3D graphic renders</li>
-        <li>Simulating artificial intelligence in opponents</li>
-        <li>Adding sound effects, music, and voice-overs</li>
-        <li>Implementing game logic and mechanic</li>
-        <li>Creating the user interface</li>
-        <li>Writing code specific to keyboard, mice, or joysticks</li>
-        <li>
-          Making it possible for players to compete or cooperate via LAN or the
-          internet
-        </li>
-        <li>Developing custom tools</li>
-        <li>Porting code between platforms</li>
-        <li>
-          Implementing algorithms, addressing memory requirements and caching
-          issues
-        </li>
-        <li>Identifying and fixing bugs</li>
-      </ul>
-    </div>
+        <ul>
+          <li>Building a customized base engine for the game</li>
+          <li>Scripting functions, events, interactions</li>
+          <li>
+            Creating physics (e.g. gravity differences in a game set in space)
+          </li>
+          <li>Developing and modifying 3D graphic renders</li>
+          <li>Simulating artificial intelligence in opponents</li>
+          <li>Adding sound effects, music, and voice-overs</li>
+          <li>Implementing game logic and mechanic</li>
+          <li>Creating the user interface</li>
+          <li>Writing code specific to keyboard, mice, or joysticks</li>
+          <li>
+            Making it possible for players to compete or cooperate via LAN or the
+            internet
+          </li>
+          <li>Developing custom tools</li>
+          <li>Porting code between platforms</li>
+          <li>
+            Implementing algorithms, addressing memory requirements and caching
+            issues
+          </li>
+          <li>Identifying and fixing bugs</li>
+        </ul>
+      </div>
       <p>Identifying and fixing bugs</p>
       <p>
         The average programmer makes USD $59,010 per year, however, a senior or
@@ -440,16 +468,16 @@
       </p>
       <b>Designers may be responsible for:</b>
       <div class="box1">
-      <ul>
-        <li>Developing the storyline, character back-stories, and dialogue</li>
-        <li>Developing gameplay, rules, and the scoring system</li>
-        <li>Determining the level of difficulty</li>
-        <li>Building environments, ledges, obstacles, and objects</li>
-        <li>Level and world design</li>
-        <li>Programming/scripting</li>
-        <li>Digital editing</li>
-      </ul>
-    </div>
+        <ul>
+          <li>Developing the storyline, character back-stories, and dialogue</li>
+          <li>Developing gameplay, rules, and the scoring system</li>
+          <li>Determining the level of difficulty</li>
+          <li>Building environments, ledges, obstacles, and objects</li>
+          <li>Level and world design</li>
+          <li>Programming/scripting</li>
+          <li>Digital editing</li>
+        </ul>
+      </div>
       <p>
         If working for a larger company, these tasks could resemble individual
         roles, which we’ll cover next.
@@ -595,13 +623,13 @@
         as:
       </p>
       <div class="box1">
-      <ul>
-        <li>Quest designers</li>
-        <li>Combat designers</li>
-        <li>Writers</li>
-        <li>Interpreters and translators</li>
-      </ul>
-    </div>
+        <ul>
+          <li>Quest designers</li>
+          <li>Combat designers</li>
+          <li>Writers</li>
+          <li>Interpreters and translators</li>
+        </ul>
+      </div>
       <p>
         Later in the game development process, the product team plays more of a
         role, helping to handle the marketing and distribution of the game
@@ -609,111 +637,122 @@
 
       <h2>Post-production</h2>
       <p>
-Once production is complete and the game has shipped, the game development
- process continues with some team members being relegated to maintenance 
- (fixing bugs, creating patches) or creating bonus or downloadable content
-  (DLC). Others may move onto the sequel or the next project.
+        Once production is complete and the game has shipped, the game development
+        process continues with some team members being relegated to maintenance
+        (fixing bugs, creating patches) or creating bonus or downloadable content
+        (DLC). Others may move onto the sequel or the next project.
 
         A post-mortem or debrief may be held to discuss what worked/didn’t
-         work and determine what could be done better next time. All the design
-          documents, assets and code are finalized, gathered and stored, in
-           case they are needed in the future.</p>
-    </ol>
-     
-   <footer class="footer">
+        work and determine what could be done better next time. All the design
+        documents, assets and code are finalized, gathered and stored, in
+        case they are needed in the future.</p>
+  </ol>
+
+  <footer class="footer">
     <div class="footer__addr">
       <h1 class="footer__logo">HOME</h1>
-          
+
       <h2>Contact</h2>
-      
+
       <address>
-         Phagwara, Punjab,India <br>
-            
+        Phagwara, Punjab,India <br>
+
         <a class="footer__btn" href="guttikondasivachandrasekhar@gmail.com">Email Us</a>
       </address>
     </div>
-    
+
     <ul class="footer__nav">
       <li class="nav__item">
         <h2 class="nav__title">Media</h2>
-  
+
         <ul class="nav__ul">
           <li>
             <a href="about.html">Blog wrote by</a>
           </li>
-  
+
           <li>
             <a href="https://www.instagram.com/passion_1_9/">Instagram</a>
           </li>
-              
+
           <li>
             <a href="@chandu_g_">Twitter</a>
           </li>
         </ul>
       </li>
-      
-      
-      
+
+
+
       <li class="nav__item">
         <h2 class="nav__title">Legal</h2>
-        
+
         <ul class="nav__ul">
           <li>
             <a href="#">Privacy Policy</a>
           </li>
-          
+
           <li>
             <a href="#">Terms of Use</a>
           </li>
-          
+
           <li>
             <a href="#">Sitemap</a>
           </li>
         </ul>
       </li>
     </ul>
-    
+
     <div class="legal">
       <p>&copy; 2022 GAME DEVELOPMENT. All rights reserved.</p>
-      
-      
+
+
     </div>
-    <button id="scrollToTopBtn" onclick="scrollToTop()"><i
-      class="fa-solid fa-arrow-up"></i></button></div>
+    <button id="scrollToTopBtn" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button></div>
   </footer class="footer">
- 
 
- 
 
-  
-  </body>
-  <script>
-    function scrollToTop() {
-      // Smooth scroll behavior
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
+
+
+
+</body>
+<script>
+  function scrollToTop() {
+    // Smooth scroll behavior
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
+  window.onscroll = function () {
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    const halfPage = window.innerHeight / 2;
+
+    if (window.scrollY > halfPage) {
+      scrollToTopBtn.style.display = "block";
+    } else {
+      scrollToTopBtn.style.display = "none";
     }
-  
-    window.onscroll = function () {
-      const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-      const halfPage = window.innerHeight / 2;
-  
-      if (window.scrollY > halfPage) {
-        scrollToTopBtn.style.display = "block";
-      } else {
-        scrollToTopBtn.style.display = "none";
-      }
+  }
+  window.onscroll = function () {
+    var navbar = document.getElementById("navbar");
+    if (window.pageYOffset >= 40) {
+      navbar.classList.add("sticky");
+    } else {
+      navbar.classList.remove("sticky");
     }
-      window.onscroll = function () {
-        var navbar = document.getElementById("navbar");
-        if (window.pageYOffset >= 40) {
-          navbar.classList.add("sticky");
-        } else {
-          navbar.classList.remove("sticky");
-        }
-      };
-  
-  </script>
+  };
+
+  // dark mode script
+  const themeBtn = document.getElementById("theme-btn");
+  themeBtn.onclick = () => {
+    themeBtn.classList.toggle("fa-sun");
+    if (themeBtn.classList.contains("fa-sun")) {
+      document.body.classList.add("changeTheme");
+    } else {
+      document.body.classList.remove("changeTheme");
+    }
+  }
+
+</script>
+
 </html>
