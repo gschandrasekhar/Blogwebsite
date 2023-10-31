@@ -111,3 +111,7 @@
   .remember-forgot a:hover, .register-link a:hover {
     text-decoration: underline;
   }
+
+html {
+  scroll-behavior: smooth;
+}

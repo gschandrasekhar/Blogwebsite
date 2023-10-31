@@ -54,5 +54,7 @@ body{
         background-position: center 25%;
    } 
 }
-     
-     
+
+html {
+    scroll-behavior: smooth;
+}

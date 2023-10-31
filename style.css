@@ -211,3 +211,7 @@ header{
       flex: 2 0px;
     }
   }
+
+html {
+  scroll-behavior: smooth;
+}
