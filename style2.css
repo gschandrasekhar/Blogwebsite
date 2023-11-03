@@ -61,8 +61,8 @@
     margin: -15px 0 15px;
     font-size: 18px;
     color: #fff;
-    display: flex;
-    justify-content: space-between;
+    display:contents
+    justify-content: left;
   }
 
   .remember-forgot label input {
